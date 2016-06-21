@@ -1,9 +1,17 @@
 {
-  "TemplateName": "boilr-template",
-  "Authors": "Andrew Howden <hello[at]andrewhowden.com>",
-  "Year": "2016",
-  "GithubReference": "littlemanco/boilr-template",
-  "ProjectGoal": "",
-  "SimilarWork": "",
-  "Justification": ""
+  "Namespace": "example-co",
+  "Service": "webserver",
+  "Application": "nginx",
+  "Role": "webserver",
+  "ApplicationPortProtocol": [
+    "TCP",
+    "UDP"
+  ],
+  "ApplicationPortName": "http",
+  "ApplicationPort": 80,
+  "Type": [
+    "ClusterIP",
+    "NodePort",
+    "LoadBalancer"
+  ]
 }
