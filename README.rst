@@ -36,7 +36,7 @@ Installation
 
 .. Code:: bash
 
-  $ boilr template download littlemanco/boilr-k8sservice
+  $ boilr template download littlemanco/boilr-k8sservice k8sservice 
 
 Usage
 -----
