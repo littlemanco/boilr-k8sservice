@@ -5,6 +5,11 @@ apiVersion: "v1"
 metadata:
   name: "{{ Service }}"
   namespace: "{{ Namespace }}"
+  {{ if eq UsePrometheus "true" }}annotations:
+    prometheus.io/scrape: "true"{{ end }}
+  labels:
+    application: "{{ Application }}"
+    role: "{{ Role }}"
 spec:
   selector:
     application: "{{ Application }}"
