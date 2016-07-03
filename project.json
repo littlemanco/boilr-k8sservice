@@ -13,5 +13,9 @@
     "ClusterIP",
     "NodePort",
     "LoadBalancer"
+  ],
+  "UsePrometheus": [
+    "true",
+    "false"
   ]
 }
